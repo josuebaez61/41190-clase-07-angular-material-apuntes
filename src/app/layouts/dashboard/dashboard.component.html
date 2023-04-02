@@ -1,0 +1,26 @@
+<mat-drawer-container class="dashboard-layout">
+  <!-- SIDEBAR -->
+  <mat-drawer class="drawer p-3" #drawer mode="side">I'm a drawer</mat-drawer>
+
+  <!-- CONTENEDOR -->
+  <mat-drawer-content>
+    <!-- TOOLBAR -->
+    <mat-toolbar color="primary">
+      <button
+        (click)="drawer.toggle()"
+        mat-icon-button
+        class="example-icon"
+        aria-label="Example icon-button with menu icon"
+      >
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>My App</span>
+    </mat-toolbar>
+
+    <!-- CONTENEDOR MAIN DE LAS PAGINAS -->
+    <main class="p-3">
+      <h2>Es produccion: {{ isProd }}</h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium aperiam, sequi eaque voluptatibus mollitia dignissimos inventore nulla et hic voluptate deleniti id explicabo obcaecati autem corrupti nihil labore assumenda quo!</p>
+    </main>
+  </mat-drawer-content>
+</mat-drawer-container>
